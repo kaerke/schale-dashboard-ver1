@@ -11,18 +11,18 @@ A polished Blue Archive inspired dashboard with glass UI, animated widgets, and 
 
 ```
 project-root/
-|-- src/                    # React ????
-|   |-- components/         # ????
-|   |-- hooks/              # ??? Hooks
-|   |-- features/           # ??/????
-|   |-- services/           # API?????
-|   `-- utils/              # ????
+|-- src/                    # React 前端应用
+|   |-- components/         # 公共组件
+|   |-- hooks/              # 自定义 Hooks
+|   |-- features/           # 页面/业务模块
+|   |-- services/           # API、数据服务
+|   `-- utils/              # 工具函数
 |
-|-- server/                 # ?? Express + TypeScript
+|-- server/                 # 后端 Express + TypeScript
 |
-|-- dist/                   # ?????? (npm run build)
+|-- dist/                   # 前端构建产物 (npm run build)
 |
-`-- dist-server/            # ?????? (npm run build:server)
+`-- dist-server/            # 后端构建产物 (npm run build:server)
 
 
 ```
