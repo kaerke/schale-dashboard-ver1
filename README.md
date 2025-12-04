@@ -10,15 +10,20 @@ A polished Blue Archive inspired dashboard with glass UI, animated widgets, and 
 - **Build tooling:** Vite for SPA, standalone TypeScript build for the API
 
 ```
-©À©¤ src/                # React application
-©¦  ©À©¤ components/
-©¦  ©À©¤ hooks/
-©¦  ©À©¤ features/
-©¦  ©À©¤ services/
-©¦  ©¸©¤ utils/
-©À©¤ server/             # Express backend (TypeScript)
-©À©¤ dist/               # Frontend build (npm run build)
-©¸©¤ dist-server/        # Backend build (npm run build:server)
+project-root/
+??? src/                     # ?? React ?????
+?   ??? components/          # ????
+?   ??? hooks/               # ??? hooks
+?   ??? features/            # ???????/?????
+?   ??? services/            # ?????????
+?   ??? utils/               # ????
+?
+??? server/                  # ?? Express + TypeScript ???
+?
+??? dist/                    # ???????npm run build?
+?
+??? dist-server/             # ???????npm run build:server?
+
 ```
 
 ## Environment Variables
