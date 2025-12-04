@@ -1,0 +1,23 @@
+server {
+    listen 80;
+    server_name your-domain.com; # 替换为你的域名
+
+    # 强制跳转 HTTPS (Certbot 会自动配置，这里是手动配置示例)
+    # return 301 https://$host$request_uri;
+    
+    location / {
+        root /var/www/html; # 前端构建产物 (dist 文件夹内容) 放置的路径
+        index index.html;
+        try_files $uri $uri/ /index.html; # 支持 React 路由
+    }
+
+    # 后端 API 反向代理
+    location /api {
+        proxy_pass http://localhost:4000; # 转发到本地运行的 Node.js 后端
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
