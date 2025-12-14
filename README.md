@@ -2,7 +2,7 @@
 # Schale Dashboard
 
 A polished Blue Archive inspired dashboard with glass UI, animated widgets, and an Arona AI assistant backed by an Express proxy for Google Gemini.
-
+<img width="2426" height="1401" alt="屏幕截图 2025-12-04 131659" src="https://github.com/user-attachments/assets/36f6b93c-88e2-4b59-aad1-d4e343266176" />
 ## Tech Stack
 
 - **Frontend:** React 19 + Vite, Tailwind CDN, TypeScript, componentized under `src/`
